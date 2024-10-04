@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Угадай число</h1>
+        <div class="difficulty">
+            <button class="difficulty-btn" data-difficulty="easy">Легко</button>
+            <button class="difficulty-btn" data-difficulty="medium">Средне</button>
+            <button class="difficulty-btn" data-difficulty="hard">Сложно</button>
+        </div>
+        <p id="instruction">Выберите уровень сложности, чтобы начать</p>
+        <input type="number" id="guess-input" placeholder="Введите число" disabled>
+        <button id="guess-btn" class="big-button" disabled>Угадать</button>
+        <p id="result"></p>
+        <div id="congrats" class="hidden"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

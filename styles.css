@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.game-container {
+  text-align: center;
+  width: 90vw;
+  max-width: 500px;
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.difficulty {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.difficulty-btn,
+.big-button {
+  font-size: 1.5em;
+  padding: 10px 20px;
+  background-color: #555;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.difficulty-btn:hover,
+.big-button:hover {
+  background-color: #777;
+}
+
+.difficulty-btn:active,
+.big-button:active {
+  transform: scale(0.9);
+}
+
+#guess-input {
+  font-size: 1.5em;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#congrats img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
